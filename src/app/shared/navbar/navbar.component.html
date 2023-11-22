@@ -1,0 +1,49 @@
+<nav class=" bg-gray-900 text-slate-300 w-full flex relative justify-between items-center mx-auto px-8 h-12">
+
+
+  <!-- logo -->
+  <div class="inline-flex">
+      <!-- menu icon -->
+        <button id="hamburger" class="focus:outline-none md:hidden pe-2" (click)="toggleSidebar()">
+          <svg
+              class="w-6 h-6 fill-current text-slate-300 hover:text-slate-100"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+              <title>Menu</title>
+              <path
+                  d="M4 6H20M4 12H20M4 18H11"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+              ></path>
+          </svg>
+      </button>
+      <!-- ./menu icon -->
+      <img srcset="./assets/images/logos/gg-logo-w.png" alt="GG-ERP" width="150px">
+  </div>
+
+  <!-- end logo -->
+
+  <!-- search bar -->
+  <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2">
+      <div class="inline-block">
+          <div class="inline-flex items-center max-w-full">
+
+          </div>
+      </div>
+  </div>
+
+
+  <div class="flex-initial">
+    <div class="flex justify-end items-center relative">
+
+
+
+      <div class="block">
+          <app-user-menu />
+      </div>
+    </div>
+  </div>
+</nav>
